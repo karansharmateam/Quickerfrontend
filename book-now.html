@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quicker - Book Now</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">Quicker</a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">HOME</a></li>
+                <li><a href="about.html" class="nav-link">ABOUT US</a></li>
+                <li><a href="services.html" class="nav-link">SERVICES</a></li>
+                <li><a href="contact.html" class="nav-link">CONTACT</a></li>
+                <li><a href="book-now.html" class="nav-link cta-button">BOOK NOW</a></li>
+            </ul>
+            <div class="mobile-menu" id="mobileMenu">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="content-section">
+            <h2 class="section-title">Book Our Services</h2>
+            <p style="text-align: center; font-size: 1.2rem; margin-bottom: 3rem; color: #666;">Schedule your service appointment today.</p>
+            <div class="contact-form">
+                <form id="bookingForm">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="bookName">Full Name</label>
+                            <input type="text" id="bookName" name="bookName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="bookEmail">Email Address</label>
+                            <input type="email" id="bookEmail" name="bookEmail" required>
+                        </div>
+                    </div>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="bookService">Service Type</label>
+                            <select id="bookService" name="bookService" required>
+                                <option value="">Select a Service</option>
+                                <option value="Business Consulting">Business Consulting</option>
+                                <option value="Technical Support">Technical Support</option>
+                                <option value="Digital Marketing">Digital Marketing</option>
+                                <option value="Creative Design">Creative Design</option>
+                                <option value="Logistics Solutions">Logistics Solutions</option>
+                            </select>
+                        </div>
+                         <div class="form-group">
+                            <label for="bookDate">Preferred Date</label>
+                            <input type="date" id="bookDate" name="bookDate" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="bookDetails">Project Details</label>
+                        <textarea id="bookDetails" name="bookDetails" rows="4" placeholder="Please describe your requirements..." required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label class="terms-group">
+                            <input type="checkbox" id="bookTerms" name="bookTerms" required>
+                            I agree to the Terms of Service.
+                        </label>
+                    </div>
+                    <button type="submit" class="submit-btn">Book Appointment</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quicker</h3>
+                <p>Fast, reliable, and professional services.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <p><a href="index.html">Home</a></p>
+                <p><a href="about.html">About Us</a></p>
+                <p><a href="services.html">Services</a></p>
+                <p><a href="contact.html">Contact</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>📍 123 Business Avenue, New York</p>
+                <p>📞 +1 (555) 123-4567</p>
+                <p>✉️ info@quicker.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Quicker. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
